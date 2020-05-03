@@ -1,0 +1,66 @@
+\documentclass{kthreport}
+
+\usepackage{color}
+\usepackage{natbib}
+\usepackage[shortlabels]{enumitem}
+\usepackage[margin=5pt,skip=0pt]{caption}
+\usepackage{placeins}
+\usepackage{bibentry}
+\usepackage{amsmath}
+\usepackage{amssymb} % Therefore
+\usepackage{cancel}
+\usepackage{xcolor}
+\usepackage{bm}		% bold math symbols
+%\usepackage{biblatex}
+%\addbibresource{licentiate.bib}
+%\DeclareBibliographyCategory{ignore}
+%\addtocategory{ignore}{poirel08,poirel10,barnes16,yuan13,barnes18}
+
+% default language is English, but you can use Swedish definitions like this:
+% \documentclass[swedish]{kthreport}
+
+% Remember that in order for the class to find the KTH logo, you need to
+% have it in your path, for example:
+% export TEXINPUTS=/path/to/logo/location//:$TEXINPUTS
+
+\definecolor{armygreen}{rgb}{0.29, 0.33, 0.13}
+\definecolor{auburn}{rgb}{0.43, 0.21, 0.1}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{bistre}{rgb}{0.24, 0.17, 0.12}
+\definecolor{burgundy}{rgb}{0.5, 0.0, 0.13}
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+\definecolor{saddlebrown}{rgb}{0.55, 0.27, 0.07}
+
+\title{Linearization of FSI problems}
+%\subtitle{This will be read by all employees}
+\author{Prabal S. Negi}
+%\diarienr{99999-99}
+\newcommand{\ignorecite}[1]{{\@fileswfalse\cite{#1}}}
+\newcommand{\ignorecitep}[1]{{\@fileswfalse\citep{#1}}}
+
+\begin{document}
+\maketitle
+
+%\input{ale}
+%\input{struc_translation}
+%\input{ale_linearization}
+%\input{results_cyl}
+%\input{noale_linearization}
+
+%\input{noale2}
+%\input{struc_rotational}
+
+%\input{noale4}
+%\input{noale5}
+%\input{full_ns}
+\input{adjoint}
+
+
+\FloatBarrier
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{fsi}
+%\printbibliography[notcategory=ignore]
+\end{document}
+
+
